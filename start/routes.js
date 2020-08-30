@@ -19,6 +19,7 @@ const Route = use('Route')
 Route.get('/', () => {
     return { greeting: 'Hello world in JSON' }
 })
+
 Route.group(() => {
     Route.get('/teachers', 'TeacherController.index')
     Route.get('/teachers/:id', 'TeacherController.show')
