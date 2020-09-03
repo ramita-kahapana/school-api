@@ -51,7 +51,7 @@ class EnrollmentController {
         if (validation.fails()) //true and fail
             return { status: 422, error: validation.messages(), data: undefined }
             //if (!mark) missingKeys.push('mark')
-        const enrollment = new Group();
+        const enrollment = new Enrollment();
         enrollment.mark = mark;
         enrollment.student_id = student_id;
         enrollment.subject_id = subject_id;
